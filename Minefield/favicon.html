@@ -1,0 +1,1178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from www.rudrarealestate.com/Minefield/favicon.ico by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 May 2016 17:36:32 GMT -->
+<head>
+<title>Page Not Found</title>
+<meta name="description" content="Page not found. The page you are looking for doesn't seem to exist." /> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content="../index.html" />
+<meta name="page-topic" content="Page not found" />
+<meta name="copyright" content="Rudra Real Estate Limited" />
+<meta name="robots" content="noindex" />
+<meta name="rating" content="safe for kids" />
+<meta name="googlebot" content="noindex, follow" />
+<meta name="bingbot" content="noindex, follow" />
+<meta name="reply-to" content="info@rudra.net.in" />
+<meta name="allow-search" content="yes" />
+<meta name="revisit-after" content="daily" />
+<meta name="distribution" content="global" />
+<meta name="expires" content="never" />
+<meta http-equiv="content-language" content="english" />
+<link rel="shortcut icon" href="favicon.html" />
+<link href="../style.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="../js/resizing-home.js"></script>
+<script type="text/javascript" src="../js/jquery.easing.1.3.js"></script>
+<script src="../js/modernizr.js" type="text/javascript"></script>
+<script src="../js/respond.min.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="../js/mobilemenu/mobile.css" media="all"/>
+<script type="text/javascript" src="../js/mobilemenu/dojo.js" ></script>
+
+<link rel="stylesheet" type="text/css" href="../js/banner-home/jquery.ad-gallery.css">
+<script type="text/javascript" src="../js/banner-home/jquery.ad-gallery.js"></script>
+<script type="text/javascript">
+$(function() {
+var galleries = $('.ad-gallery').adGallery();
+});
+</script>
+
+<script type="text/javascript" src="../js/jquery.jcarousel.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/skin.css" />
+
+<script type="text/javascript" src="../js/jquery.zoom.js"></script>
+<script type="text/javascript" src="../js/jquery.tooltipster.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/tooltipster.css" />
+
+<link rel="stylesheet" href="../css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" src="../js/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" charset="utf-8">
+			$(document).ready(function(){
+				$("area[rel^='prettyPhoto']").prettyPhoto();
+				
+				$(".gallery:first a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',theme:'light_square',slideshow:3000, autoplay_slideshow: false});
+				$(".gallery:gt(0) a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'fast',slideshow:10000, hideflash: true});
+		
+				$("#custom_content a[rel^='prettyPhoto']:first").prettyPhoto({
+					custom_markup: '<div id="map_canvas" style="width:260px; height:265px"></div>',
+					changepicturecallback: function(){ initialize(); }
+				});
+
+				$("#custom_content a[rel^='prettyPhoto']:last").prettyPhoto({
+					custom_markup: '<div id="bsap_1259344" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6"></div><div id="bsap_1237859" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6" style="height:260px"></div><div id="bsap_1251710" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6"></div>',
+					changepicturecallback: function(){ _bsap.exec(); }
+				});
+				
+				
+			});
+</script>
+
+<script type="text/javascript" src="../video/flowplayer-3.2.10.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	
+	
+	
+	
+	$('.tooltip').tooltipster({
+   		animation: 'grow'}
+    );
+
+	$('#ex1').zoom();
+	
+	$("#closeicon").click(function(){
+	   $("#content-area").stop(true, true).fadeOut(600);
+	});
+	
+	$("#searchicon").click(function(){
+	   $(".searchdiv").stop(true, true).fadeIn(600);
+	});
+
+	
+	/* speed = 2000;
+	 easing = "easeOutQuart";	 
+	 $("#content-area").stop(true).delay(500).animate({right: "43px"},speed, easing);
+	$("body").addClass("overflow-hidden");
+	$("#expand").stop(true).animate({right: "-36px"},100, easing);
+	
+	$("#content-area").hover(function(){
+	}, function () {
+	  $("#content-area").stop(true).animate({right: "-720px"},2000, easing);
+	  $("#expand").stop(true).animate({right: "0px"},400, easing);
+	});
+	
+	$("#expand").click(function(){
+		$("#expand").stop(true).animate({right: "-36px"},400, easing);
+		$("#content-area").stop(true).delay(200).animate({right: "43px"},2000, easing);
+	});*/
+
+	
+	cunterSlide = 0;
+	speed = 500;
+	easing = "easeInQuad";
+	$("#searchicon").click(function(){
+		cunterSlide++;
+		if(cunterSlide == 1){
+			$(".searchdiv").stop(true, true).animate({height: "160px"}, speed, easing);
+			cunterSlide1 = 0;
+		}
+		if(cunterSlide == 2){
+			$(".searchdiv").stop(true, true).animate({height: "0px"}, speed, easing);
+			cunterSlide = 0;
+		}
+	});
+	
+	cunterSlide = 0;
+	speed = 1000;
+	easing = "easeOutBack";
+	$("#emailicon").click(function(){
+		cunterSlide++;
+		if(cunterSlide == 1){
+			$(".emaildiv").stop(true, true).animate({height: "295px"}, speed, easing);
+			cunterSlide1 = 0;
+		}
+		if(cunterSlide == 2){
+			$(".emaildiv").stop(true, true).animate({height: "0px"}, speed, easing);
+			cunterSlide = 0;
+		}
+		
+	});
+	
+	$(".closebut").click(function(){
+	   $(".emaildiv").stop(true, true).animate({height: "0px"}, speed, easing);
+	});
+	
+	
+	cunterSlide = 0;
+	speed = 1000;
+	easing = "easeOutBack";
+	$("#emiicon").click(function(){
+		cunterSlide++;
+		if(cunterSlide == 1){
+			$(".emidiv").stop(true, true).animate({height: "265px"}, speed, easing);
+			cunterSlide1 = 0;
+		}
+		if(cunterSlide == 2){
+			$(".emidiv").stop(true, true).animate({height: "0px"}, speed, easing);
+			cunterSlide = 0;
+		}
+		
+	});
+	
+	$(".closebut6").click(function(){
+	   $(".emidiv").stop(true, true).animate({height: "0px"}, speed, easing);
+	});
+	
+	
+	function MenuHover(buttonName, popupName){
+		$(buttonName).hover(function(){
+			$(popupName).stop(true, true).fadeIn(500);
+		}, function(){
+			$(popupName).stop(true, true).fadeOut("fast");
+		});
+		$(popupName).hover(function(){
+			$(popupName).stop(true, true).show();
+			$(buttonName).addClass("active-menu");
+		}, function(){
+			$(popupName).stop(true, true).fadeOut("fast");
+			$(buttonName).removeClass("active-menu");
+		});
+		
+	}
+	MenuHover();
+	MenuHover("#btn1", "#btn1-popup");
+	MenuHover("#btn2", "#btn2-popup");
+	MenuHover("#btn3", "#btn3-popup");
+	MenuHover("#btn4", "#btn4-popup");
+	MenuHover("#btn5", "#btn5-popup");
+	MenuHover("#btn6", "#btn6-popup");
+	MenuHover("#btn7", "#btn7-popup");
+	MenuHover("#btn2a", "#btn2a-popup");
+	MenuHover("#btn3a", "#btn3a-popup");
+	MenuHover("#btn2b", "#btn2b-popup");
+	MenuHover("#btn2c", "#btn2c-popup");
+	MenuHover("#btn2d", "#btn2d-popup");
+	MenuHover("#btn2e", "#btn2e-popup");
+	
+	
+	jQuery('#mycarousel').jcarousel({
+		auto: 4,
+    	wrap: 'circular',
+        scroll: 1
+    });
+	
+	jQuery('#mycarousel1').jcarousel({
+		auto: 4,
+    	wrap: 'circular',
+		vertical: true,
+        scroll: 2
+    });
+	
+	$("#vertical div a").hover(function(){
+		$("img", this).stop().animate({top:"-79px"},{queue:false,duration:200});
+	}, function() {
+		$("img", this).stop().animate({top:"0px"},{queue:false,duration:200});
+	});
+	
+	$("#newsletter").click(function(){
+		$("#newsletterdiv").stop().animate({left:"0px"},{queue:false,duration:400});
+		$("#newsletter").stop().animate({left:"-65px"},{queue:false,duration:200});
+	});
+	
+	$(".closebut").click(function(){
+		$("#newsletterdiv").stop().animate({left:"-210px"},{queue:false,duration:200});
+		$("#newsletter").stop().animate({left:"0px"},{queue:false,duration:400});
+	});
+	
+	$("#enq").click(function(){
+		$(".enquiry").stop().animate({left:"0px"},{queue:false,duration:400});
+		$("#enq").stop().animate({left:"-50px"},{queue:false,duration:200});
+	});
+	
+	$(".closebutenq").click(function(){
+		$(".enquiry").stop().animate({left:"-185px"},{queue:false,duration:200});
+		$("#enq").stop().animate({left:"0px"},{queue:false,duration:400});
+	});
+	
+	
+	
+	$("#coicon").click(function(){
+		$(".maps").fadeIn("fast");
+	});
+	$(".mapclose").click(function(){
+		$(".maps").fadeOut("fast");
+	});
+	
+	$("#coicon1").click(function(){
+		$(".maps1").fadeIn("fast");
+	});
+	$(".mapclose1").click(function(){
+		$(".maps1").fadeOut("fast");
+	});
+	
+	$("#coicon2").click(function(){
+		$(".maps2").fadeIn("fast");
+	});
+	$(".mapclose2").click(function(){
+		$(".maps2").fadeOut("fast");
+	});
+	
+	$("#coicon3").on("click", function(){
+		//$(".maps3").fadeIn("fast");
+		if (! map) {
+		  initialize();
+		}
+		searchAddress( $(".maps3").fadeIn("fast") );
+		showMap();
+	});
+	$(".mapclose3").click(function(){
+		$(".maps3").fadeOut("fast");
+	});
+	
+	$("#coicon4").click(function(){
+		$(".maps4").fadeIn("fast");
+	});
+	$(".mapclose4").click(function(){
+		$(".maps4").fadeOut("fast");
+	});
+	
+	$("#coicon5").click(function(){
+		$(".maps5").fadeIn("fast");
+	});
+	$(".mapclose5").click(function(){
+		$(".maps5").fadeOut("fast");
+	});
+	
+	$(".check-main, .check-back").fadeIn("fast");
+	$(".close-check").click(function(){
+		$(".check-main, .check-back").fadeOut("fast");
+	});
+	
+	
+	
+
+	
+	
+});
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $("#bookmarkme").click(function() {
+      if (window.sidebar) { // Mozilla Firefox Bookmark
+        window.sidebar.addPanel(location.href,document.title,"");
+      } else if(window.external) { // IE Favorite
+        window.external.AddFavorite(location.href,document.title); }
+      else if(window.opera && window.print) { // Opera Hotlist
+        this.title=document.title;
+        return true;
+		
+  }
+});
+
+	var xUpval = 0;
+	$('#content-area').mouseover(function(e) {
+        $('.updown').show();
+    }).mousemove(function(e) {
+        $('.updown').css('top', e.pageY - 120);
+		 xUpval<e.pageY ? $('#content-area').append("<div class='updown up'></div>") : $('#content-area').append("<div class='updown down'></div>");
+         xUpval=e.pageY;
+    }).mouseout(function(e) {
+        $('.updown').hide();
+    });
+	
+
+});
+</script>
+
+<link rel="stylesheet" type="text/css" href="../css/jquery-ui.css" />
+
+<script type="text/javascript" src="../js/jquery-ui.min-calc.js"></script>
+
+<!--<link type="text/css" rel="stylesheet" href="/js/jquery.mmenu.css" />		
+<script type="text/javascript" src="/js/jquery.mmenu.js"></script>
+
+<script type="text/javascript">
+$(function() {
+	$('#menu').mmenu({});
+});
+</script>
+-->
+
+<script type="text/javascript">
+ 	var fadeDuration=2000;
+	var slideDuration=4000;
+	var currentIndex=1;
+	var nextIndex=1;
+	$(document).ready(function()
+	{
+		$('ul.slideshow li img');
+		$('ul.slideshow li').css({opacity: 0.0});
+		$("'ul.slideshow li:nth-child("+nextIndex+")'").addClass('show').animate({opacity: 1.0}, fadeDuration);
+		var timer = setInterval('nextSlide()',slideDuration);
+	})
+	function nextSlide(){
+			nextIndex =currentIndex+1;
+			if(nextIndex > $('ul.slideshow li').length)
+			{
+				nextIndex =1;
+			}
+			$("'ul.slideshow li:nth-child("+nextIndex+")'").addClass('show').animate({opacity: 1.0}, fadeDuration);
+			$("'ul.slideshow li:nth-child("+currentIndex+")'").animate({opacity: 0.0}, fadeDuration).removeClass('show');
+			currentIndex = nextIndex;
+	}
+ </script>
+
+
+
+<script language=JavaScript>
+var message="Function Disabled!";
+
+function clickIE4(){
+if (event.button==2){
+alert(message);
+return false;
+}
+}
+
+function clickNS4(e){
+if (document.layers||document.getElementById&&!document.all){
+if (e.which==2||e.which==3){
+alert(message);
+return false;
+}
+}
+}
+
+if (document.layers){
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS4;
+}
+else if (document.all&&!document.getElementById){
+document.onmousedown=clickIE4;
+}
+
+document.oncontextmenu=new Function("return false")
+
+</script>
+
+
+
+<script type="text/javascript"> 
+    var $buoop = {vs:{i:7,f:5,o:12,s:5,n:9}}; 
+    $buoop.ol = window.onload; 
+    window.onload=function(){ 
+     try {if ($buoop.ol) $buoop.ol();}catch (e) {} 
+     var e = document.createElement("script"); 
+     e.setAttribute("type", "text/javascript"); 
+     e.setAttribute("src", "../../browser-update.org/update.js"); 
+     document.body.appendChild(e); 
+    } 
+</script> 
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#enquiry").click(function(){
+	$("#black").show();
+	$("#enquirybox").fadeIn("fast");
+	});
+	$("#enquiryclose").click(function(){
+	$("#black").fadeOut("fast");
+	$("#enquirybox").fadeOut("fast");
+	});
+});
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');  ga('create', 'UA-46530336-1', 'rudrarealestate.com');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+<style>
+
+#error {
+color: #2E2E2E;
+font-size: 12px;
+line-height: 20px;
+font-family: 'siemens_sansroman', Arial, sans-serif;
+text-align:center !important;
+padding-top:40%;
+}
+
+.but1 {padding: 3px 7px;
+background: #509655;
+border: 1px solid #a6ce39;
+color: #fff;
+font-weight: bold;
+width:125px;
+left:50%;
+margin-left:250px;
+text-decoration:none; text-align:center;
+}
+
+#error .title {
+font-size: 26px;
+text-transform: uppercase;
+font-family: 'siemens_sansroman', Arial, sans-serif;
+margin-bottom: 20px;
+line-height: 28px;
+color:#509655;
+}
+
+</style>
+</head>
+
+<body>
+<!---resizing start here--->
+<div id="mid-band">
+ <div id="image"><div id="gallery" class="ad-gallery">
+	<div class="ad-image-wrapper"></div>
+		<div class="ad-nav">
+			<div class="ad-thumbs"> 
+				<ul class="ad-thumb-list">
+				<li><a href="../images/main-banner1.jpg"><img src="images/spacer.html"></a></li>
+				<li><a href="../images/gardencity-banner.jpg"><img src="images/spacer.html"></a></li>
+				<li><a href="../images/buddha-banner.jpg"><img src="images/spacer.html"></a></li>
+				<li><a href="../images/aishwaryam-banner.jpg"><img src="images/spacer.html"></a></li>
+				<li><a href="../images/h-pic6.jpg"><img src="images/spacer.html"></a></li>
+				<li><a href="../images/h-pic2.jpg"><img src="images/spacer.html"></a></li>                
+                <li><a href="../images/bg-sangam.jpg"><img src="images/spacer.html"></a></li>
+                <li><a href="../images/main-banner2.jpg"><img src="images/spacer.html"></a></li>
+				<li><a href="../images/bg-banke-bihari.jpg"><img src="images/spacer.html"></a></li>
+				<li><a href="../images/h-pic4.jpg"><img src="images/spacer.html"></a></li>
+				<li><a href="../images/h-pic9.jpg"><img src="images/spacer.html"></a></li>                
+                <li><a href="../images/bg14.jpg"><img src="images/spacer.html"></a></li>
+                <li><a href="../images/bg-prestige.jpg"><img src="images/spacer.html"></a></li>
+				<li><a href="../images/h-pic1.jpg"><img src="images/spacer.html"></a></li>
+                <li><a href="../images/bg-ratnam.jpg"><img src="images/spacer.html"></a></li>
+				<li><a href="../images/h-pic5.jpg"><img src="images/spacer.html"></a></li>
+                <li><a href="../images/bg-akariti.jpg"><img src="images/spacer.html"></a></li>				
+				<li><a href="../images/h-pic7.jpg"><img src="images/spacer.html"></a></li>
+                <li><a href="../images/bg-enclave.jpg"><img src="images/spacer.html"></a></li>				
+				<li><a href="../images/h-pic11.jpg"><img src="images/spacer.html"></a></li>
+                <li><a href="../images/bg-mukund.jpg"><img src="images/spacer.html"></a></li>
+				
+				</ul>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bannertextbar">
+	<div class="bannertextcont">
+	
+    	<div class="bannertext" id="bntext0">
+    		<div class="bntextcont">
+    		</div>
+    	</div>    	
+	
+    	<div class="bannertext" id="bntext1">
+    		<div class="bntextcont"><img src="../images/gardencity-logos.png" border="0" />
+    		</div>
+    	</div> 
+
+		<div class="bannertext" id="bntext2">
+    		<div class="bntextcont"><img src="../images/buddha-logos.png" border="0" />
+    		</div>
+    	</div>  
+		
+		<div class="bannertext" id="bntext3">
+    		<div class="bntextcont"><img src="../images/aishwar-logos.png" border="0" />
+    		</div>
+    	</div>  
+		
+		<div class="bannertext" id="bntext4">
+    		<div class="bntextcont"><img src="../images/logo12.png" border="0" />
+    		</div>
+    	</div>    	
+	
+    	<div class="bannertext" id="bntext5">
+    		<div class="bntextcont">
+    		</div>
+    	</div>    	
+	
+    	<div class="bannertext" id="bntext6">
+    		<div class="bntextcont"><img src="../images/logo13.png" border="0" />
+    		</div>
+    	</div>    	
+	
+    	<div class="bannertext" id="bntext7">
+    		<div class="bntextcont">
+    		</div>
+    	</div>    	
+	
+    	<div class="bannertext" id="bntext8">
+    		<div class="bntextcont"><img src="../images/logo2.png" border="0" />
+    		</div>
+    	</div>    	
+	
+    	<div class="bannertext" id="bntext9">
+    		<div class="bntextcont">
+    		</div>
+    	</div>    	
+	
+    	<div class="bannertext" id="bntext10">
+    		<div class="bntextcont"><img src="../images/logo8.png" border="0" />
+    		</div>
+    	</div>    	
+	
+    	<div class="bannertext" id="bntext11">
+    		<div class="bntextcont">
+    		</div>
+    	</div>
+        
+        <div class="bannertext" id="bntext12">
+    		<div class="bntextcont"><img src="../images/logo7.png" border="0" />
+    		</div>
+    	</div>    	
+	
+    	<div class="bannertext" id="bntext13">
+    		<div class="bntextcont">
+    		</div>
+    	</div>
+        
+        <div class="bannertext" id="bntext14">
+    		<div class="bntextcont"><img src="../images/logo9.png" border="0" />
+    		</div>
+    	</div>    	
+	
+    	<div class="bannertext" id="bntext15">
+    		<div class="bntextcont">
+    		</div>
+    	</div>
+        
+        <div class="bannertext" id="bntext16">
+    		<div class="bntextcont"><img src="../images/logo1.png" border="0" />
+    		</div>
+    	</div>    	
+	
+    	<div class="bannertext" id="bntext17">
+    		<div class="bntextcont">
+    		</div>
+    	</div>
+        
+        <div class="bannertext" id="bntext18">
+    		<div class="bntextcont"><img src="../images/logo3.png" border="0" />
+    		</div>
+    	</div> 
+        
+        <div class="bannertext" id="bntext19">
+    		<div class="bntextcont">
+    		</div>
+    	</div>
+        
+        <div class="bannertext" id="bntext20">
+    		<div class="bntextcont"><img src="../images/logo6.png" border="0" />
+    		</div>
+    	</div> 
+		
+		
+        
+	</div>
+</div>
+</div>
+ <div id="myLoader" class="bgloader"><img src="../images/loader.gif" alt="loader" border="0" /></div>
+ </div>
+<!---resizing end here--->
+ 
+   <!----Header Start Here----->
+      
+ <Script type="text/javascript">
+function svalidatesidefrm1234()
+{
+
+	$("#sideemail").css({border:'1px solid #ccc', background:'#fff'});
+
+	var count_bug=0;
+	
+	if (document.sidefrm.sideemail.value=="Email*")
+	{
+		$("#sideemail").css({border:'1px solid #ff0000', background:'#ffdbdb', color:'#222'});
+		document.sidefrm.sideemail.focus();
+		if(eval(count_bug)==0)			
+		count_bug+=1;
+	}
+	
+	else if(!isEmails(document.sidefrm.sideemail.value))
+	{
+		$("#sideemail").css({border:'1px solid #ff0000', background:'#ffdbdb', color:'#222'});
+		document.sidefrm.sideemail.focus();
+		if(eval(count_bug)==0)			
+		count_bug+=1;
+	}
+	
+	if(count_bug > 0)
+		return false;
+	else
+		//return true;
+		GetRSVVals();
+}
+
+
+function isEmails (emailIn){
+	var isEmailOk = false;
+	var filter = /^[a-zA-Z0-9][a-zA-Z0-9._-]*\@[a-zA-Z0-9-]+(\.[a-zA-Z][a-zA-Z-]+)+$/
+	//  var filter = /^(([^<>()[\]\\.,;:\s@\�]+(\.[^<>()[\]\\.,;:\s@\�]+)*)|(\�.+\�))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+
+	if(emailIn.search(filter) != -1)
+		isEmailOk = true;
+	if(emailIn.indexOf("..") != -1)
+		isEmailOk = false;
+	if(emailIn.indexOf(".@") != -1)
+		isEmailOk = false;
+
+	return isEmailOk;
+}
+
+function ValidateNos( NumStr, String )
+{
+	for( var Idx = 0; Idx < NumStr.length; Idx ++ )
+	{
+		var Char = NumStr.charAt( Idx );
+		var Match = false;
+		for( var Idx1 = 0; Idx1 < String.length; Idx1 ++)
+		{
+			if( Char == String.charAt( Idx1 ) )
+			Match = true;
+		}
+		if ( !Match )
+		return false;
+	}
+	return true;
+}
+</Script>
+
+<Script>
+function getXMLHTTP() { //fuction to return the xml http object
+		var xmlhttp=false;	
+		try{
+			xmlhttp=new XMLHttpRequest();
+		}
+		catch(e)	{		
+			try{			
+				xmlhttp= new ActiveXObject("Microsoft.XMLHTTP");
+			}
+			catch(e){
+				try{
+				req = new ActiveXObject("Msxml2.XMLHTTP");
+				}
+				catch(e1){
+					xmlhttp=false;
+				}
+			}
+		}	
+		return xmlhttp;
+    }
+
+function GetRSVVals() {
+
+
+		document.getElementById('divRSVLoaderss').innerHTML="<img border='0' src='../images/loader.gif'>";
+		
+		sideemail = document.sidefrm.sideemail.value;
+	
+		
+		
+		var strURL="../inc-call-next0e59.html?sideemail="+sideemail;
+		
+		//alert(strURL);
+		var req = getXMLHTTP();		
+		if (req) {			
+			req.onreadystatechange = function() {
+				if (req.readyState == 4) {
+					// only if "OK"
+					if (req.status == 200) {						
+						document.getElementById('divRSVs').innerHTML=req.responseText;
+					} else {
+					//	alert("There was a problem while using selection");
+					}
+				}				
+			}			
+			req.open("GET.html", strURL, true);
+			req.send(null);
+		}		
+	}
+</Script>
+
+
+    <div id="shop-side">
+	<ul class="collapsing-list">
+		<li class="top browse-all hidden"><span class="dp-icon-left-dir">Browse All</span></li>
+        <li class="top"><a href="../index.html">Home</a></li>
+       	
+        <li class="top below-current"><span>About Us</span>
+		<ul>
+			<li><a href="../aboutus-overview.html">Overview</a></li>
+			<li><a href="../aboutus-vision-mission.html">Vision &amp; Mission</a></li>
+			<li><a href="../aboutus-leadership-team.html">Leadership</a></li>
+			<li><a href="../aboutus-cmd-message.html">CMD's Message</a></li>
+			<li><a href="../aboutus-group-company.html">Group Company</a></li>
+			<li><a href="../aboutus-the-logo.html">The Logo</a></li>
+		</ul>
+	</li>
+	<li class="top below-current"><span>Projects</span>
+		<ul>
+			<li><a href="../projects-varanasi.html">Varanasi</a></li>
+			<li><a href="../projects-kanpur.html">Kanpur</a></li>
+			<li><a href="../projects-allahabad.html">Allahabad</a></li>
+			<li><a href="../projects-lucknow.html">Lucknow</a></li>
+			<li><a href="../projects-mughalsarai.html">Mughalsarai</a></li>
+			<li><a href="../projects-gorakhpur.html">Gorakhpur</a></li>
+			<li><a href="../projects-delhi-ncr.html">Delhi/NCR</a></li>
+			<li><a href="javascript:;" style="cursor:default;">Gujarat</a></li>
+            
+		</ul>
+	</li>
+    
+    <li class="top below-current"><span>Plots</span>
+		<ul>
+			<li><a href="../media-news.html">Rudra in News</a></li>
+			
+		</ul>
+    
+    <li class="top below-current"><span>Media</span>
+		<ul>
+			<li><a href="../media-news.html">Rudra in News</a></li>
+			<li><a href="../media-advertisements.html">Advertisements</a></li>
+			<li><a href="../media-events.html">Events</a></li>
+			<li><a href="../news-updates.html">News Updates</a></li>
+		</ul>
+	</li>
+    
+   <li class="top below-current"><span>NRI</span>
+		<ul>
+			<li><a href="../nri-norms.html">Norms</a></li>
+			<li><a href="../nri-contacts.html">Contacts</a></li>
+		</ul>
+	</li>
+    
+    <li class="top below-current"><span>Support</span>
+		<ul>
+			<li><a href="../support-bank-finance-option.html">Bank Finance Option</a></li>
+			<li><a href="../support-our-bankers.html">Our Banking Partners</a></li>
+			<li><a href="../support-query.html">Query</a></li>
+			<li><a href="../support-associates-form.html">Be Our Marketing Associate</a></li>
+		</ul>
+	</li>
+    
+    <li class="top below-current"><span>Careers</span>
+		<ul>
+			<li><a href="../careers-work-culture.html">Work Culture</a></li>
+			<li><a href="../careers-current-openings.html">Current Openings</a></li>
+			<li><a href="../generalapply.html">Apply Online</a></li>
+		</ul>
+	</li>
+    
+    <li class="top below-current"><span>Contact Us</span>
+		<ul>
+			<li><a href="../contactus.html">Office Addresses</a></li>
+			<li><a href="../contactus-suggestions.html">Suggestions</a></li>
+			<li><a href="../contactus-land.html">Want to Sell or Develop your Land</a></li>
+		</ul>
+	</li>
+        
+		
+</ul>
+</div>
+<div id="shop-side-closer"></div>
+
+<div id="newsletterdiv">
+<a href="javascript:;" class="closebut"><img src="../images/close-btn.png" alt="close" border="0"></a>
+<h2>Subscribe to Newsletter</h2>
+   <div id="divRSVs">
+<form name="sidefrm" id="sidefrm" method="post" action="#"> 
+<input type="text" name="sideemail" id="sideemail" onblur="if (this.value == '') {this.value = 'Email*';}" onfocus="if (this.value == 'Email*') {this.value = '';}" value="Email*" maxlength="75" /><br />
+<div id="divRSVLoaderss" align=""><input type="button" name="button" id="button" value="SEND" class="input-but" onclick="JavaScript:svalidatesidefrm1234();" /></div>
+</form>
+</div>
+</div>
+
+<div id="newsletter"><img src="../images/subs.png" alt="News Letter Icon" border="0" /></div>
+	<div class="header">
+    <div class="social"><a href="https://www.youtube.com/user/Rudrarealestate" rel="nofollow" target="_blank"><img src="../images/icon-youtube.png" alt="youtube" border="0" align="absmiddle" /></a><a href="http://www.linkedin.com/profile/view?id=300850885&amp;trk=nav_responsive_tab_profile_pic" rel="nofollow" target="_blank"><img src="../images/icon-linkedin.png" alt="linkedin" border="0" align="absmiddle" /></a><a href="https://twitter.com/RUDRAREAL" rel="nofollow" target="_blank"><img src="../images/icon-twitter.png" alt="twitter" border="0" align="absmiddle" /></a><a href="https://www.facebook.com/rudrarealestate" rel="nofollow" target="_blank"><img src="../images/icon-facebook.png" alt="facebook" border="0" align="absmiddle" /></a></div>
+		
+
+    
+    
+  <!--  <div id="menu"><ul>
+	<li><a href="/index.asp">Home</a></li>
+	<li><a href="javascript:;" style="padding-right:-20px !important;">About Us</a>
+		<ul>
+			<li><a href="/aboutus-overview.asp?links=ab1">Overview</a></li>
+			<li><a href="/aboutus-vision-mission.asp?links=ab2">Vision &amp; Mission</a></li>
+			<li><a href="/aboutus-leadership-team.asp?links=ab3">Leadership</a></li>
+			<li><a href="/aboutus-cmd-message.asp?links=ab4">CMD's Message</a></li>
+			<li><a href="/aboutus-group-company.asp?links=ab5">Group Company</a></li>
+			<li><a href="/aboutus-the-logo.asp?links=ab6">The Logo</a></li>
+		</ul>
+	</li>
+	<li><a href="javascript:;" style="padding-right:-20px !important;">Projects</a>
+		<ul>
+			<li><a href="/projects-varanasi.asp?links=pr1">Varanasi</a></li>
+			<li><a href="/projects-kanpur.asp?links=pr2">Kanpur</a></li>
+			<li><a href="/projects-allahabad.asp?links=pr3">Allahabad</a></li>
+			<li><a href="/projects-lucknow.asp?links=pr4">Lucknow</a></li>
+			<li><a href="/projects-mughalsarai.asp?links=pr5">Mughalsarai</a></li>
+			<li><a href="javascript:;" style="cursor:default;">Gorakhpur</a></li>
+			<li><a href="javascript:;" style="cursor:default;">Delhi/NCR</a></li>
+			<li><a href="javascript:;" style="cursor:default;">Gujarat</a></li>
+		</ul>
+	</li>
+    
+    <li><a href="javascript:;" style="padding-right:-20px !important;">Media</a>
+		<ul>
+			<li><a href="/media-news.asp?links=me1">Rudra in News</a></li>
+			<li><a href="/media-advertisements.asp?links=me2">Advertisements</a></li>
+			<li><a href="/media-events.asp?links=me3">Events</a></li>
+		</ul>
+	</li>
+    
+    <li><a href="javascript:;" style="padding-right:-20px !important;">NRI</a>
+		<ul>
+			<li><a href="/nri-norms.asp?links=nr1">Norms</a></li>
+			<li><a href="/nri-contacts.asp?links=nr2">Contacts</a></li>
+		</ul>
+	</li>
+    
+    <li><a href="javascript:;" style="padding-right:-20px !important;">Support</a>
+		<ul>
+			<li><a href="/support-bank-finance-option.asp?links=su1">Bank Finance Option</a></li>
+			<li><a href="/support-our-bankers.asp?links=su4">Our Bankers</a></li>
+			<li><a href="/support-query.asp?links=su2">Query</a></li>
+			<li><a href="/support-associates-form.asp?links=su3">Be Our Marketing Associate</a></li>
+		</ul>
+	</li>
+    
+    <li><a href="javascript:;" style="padding-right:-20px !important;">Careers</a>
+		<ul>
+			<li><a href="/careers-work-culture.asp?links=ca1">Work Culture</a></li>
+			<li><a href="/careers-current-openings.asp?links=ca2">Current Openings</a></li>
+			<li><a href="/generalapply.asp?links=ca3">Apply Online</a></li>
+		</ul>
+	</li>
+    
+    <li><a href="javascript:;" style="padding-right:-20px !important;">Contact Us</a>
+		<ul>
+			<li><a href="/contactus.asp?links=co1">Office Addresses</a></li>
+			<li><a href="/contactus-suggestions.asp?links=co3">Suggestions</a></li>
+			<li><a href="/contactus-land.asp?links=co4">Want to Sell or Develop your Land</a></li>
+		</ul>
+	</li>
+    
+	<div class="clear"></div>
+</ul></div>  -->
+
+
+<div class="mobmenu"><a class="btnmenu" href="javascript:;"><img src="../images/icon-menu.gif" border="0" alt="menu" /></a></div>
+<script type="text/javascript" src="../js/mobilemenu/mobileUtils.js"></script>
+	<script type="text/javascript">
+		new wsgc.js.mobile.SlideoutShelf(document.getElementsByClassName('btnmenu')[0], 'shop');
+		new wsgc.js.mobile.CollapsingList(document.getElementById('shop-side'));
+	</script>
+    
+    
+    <div style="width:31px; height:89px; position:fixed; left:100%; margin:120px 0 0 0px;" id="expand"><img src="../images/expand.gif" alt="expand" border="0" /></div>
+    <!--<div style="position:absolute; right:0px; height:410px; display:block; background:url(/images/expand.gif) no-repeat 0 140px; width:31px;" id="expand"></div>
+    <div style="position:absolute; top:22px; left:160px; width:254px; height:24px;" id="slideshow"></div>-->
+	<div style="position:absolute; top:20px; left:160px; width:265px; height:40px;">
+    <ul class="slideshow">
+        <li class="show" style="opacity: 0.29639254070877974;"><a href="../index.html"><img src="../images/rudra-text.png" border="0" alt="rudra" /></a></li>
+        <li class="" style="opacity:0;"><a href="../index.html"><img src="../images/rudra-text1.png" border="0" alt="rudra" /></a></li>
+    </ul></div>
+    
+      <div class="logo"><a href="../index.html"><img src="../images/logo.jpg" alt="rudra" border="0" /></a></div>
+      <div class="menu">
+       <div class="menu-popup" id="btn1-popup">
+<ul>
+<li><a href="../aboutus-overview.html">Overview</a></li>
+<li><a href="../aboutus-vision-mission.html">Vision &amp; Mission</a></li>
+<li><a href="../aboutus-leadership-team.html">Leadership</a></li>
+<li><a href="../aboutus-cmd-message.html">CMD's Message</a></li>
+<li><a href="../aboutus-group-company.html">Group Company</a></li>
+<!--<li><a href="/aboutus-the-logo.asp?links=ab6">The Logo</a></li>-->
+</ul>
+</div>
+
+
+<div class="menu-popup" id="btn2-popup" style="margin-left:86px !important;">
+<ul>
+<li><a href="../projects-varanasi.html">Varanasi</a></li>
+<li><a href="../projects-kanpur.html">Kanpur</a></li>
+<li><a href="../projects-allahabad.html">Allahabad</a></li>
+<li><a href="../projects-lucknow.html">Lucknow</a></li>
+<li><a href="../projects-mughalsarai.html">Mughalsarai</a></li>
+<li><a href="../projects-gorakhpur.html">Gorakhpur</a></li>
+<li><a href="../projects-delhi-ncr.html">Delhi/NCR</a></li>
+<!--<li><div style="float:right; font-size:8px; background:#000; padding:1px 3px; color:#fff; margin:4px 0 0 0; font-family:tahoma">Coming soon</div><a href="javascript:;">Gorakhpur</a></li>
+<li><div style="float:right; font-size:8px; background:#000; padding:1px 3px; color:#fff; margin:4px 0 0 0; font-family:tahoma">Coming soon</div><a href="javascript:;">Delhi/NCR</a></li>-->
+<li><div style="float:right; font-size:8px; background:#000; padding:1px 3px; color:#fff; margin:4px 0 0 0; font-family:tahoma">Coming soon</div><a href="javascript:;">Gujarat</a></li>
+<!--<li><a href="/projects-mirzapur.asp">Mirzapur</a></li>-->
+
+</ul>
+</div>
+
+<div class="menu-popup" id="btn2e-popup" style="margin-left:172px !important">
+<ul>
+<li><a href="../plots-in-varanasi.html">Varanasi</a></li>			
+<li><a href="../plots-in-mirzapur.html">Mirzapur</a></li>
+<!--<li><a href="/plots-in-kanpur.asp">Kanpur</a></li>-->
+</ul>
+</div>
+
+
+<div class="menu-popup" id="btn3-popup" style="margin-left:172px !important">
+<ul>
+<li><a href="../media-news.html">Rudra in News</a></li>
+<li><a href="../media-advertisements.html">Advertisements</a></li>
+<li><a href="../media-events.html">Events</a></li>
+<li><a href="../news-updates.html">News Updates</a></li>
+</ul>
+</div>
+
+<div class="menu-popup" id="btn4-popup" style="margin-left:237px !important;">
+<ul>
+<li><a href="../nri-norms.html">Norms</a></li>
+<li><a href="../nri-contacts.html">Contacts</a></li>
+</ul>
+</div>
+
+<div class="menu-popup" id="btn5-popup" style="margin-left:285px !important;">
+<ul style="width:170px !important;">
+<li><a href="../support-bank-finance-option.html">Bank Finance Option</a></li>
+<li><a href="../support-our-bankers.html">Our Banking Partners</a></li>
+<li><a href="../support-query.html">Query</a></li>
+<!--<li><a href="/support-faqs.asp?links=su2">FAQs</a></li>-->
+<li><a href="../support-associates-form.html">Be Our Marketing Associate</a></li>
+</ul>
+</div>
+
+<div class="menu-popup" id="btn6-popup" style="margin-left:366px !important;">
+<ul style="width:170px !important;">
+<li><a href="../careers-work-culture.html">Work Culture</a></li>
+<li><a href="../careers-current-openings.html">Current Openings</a></li>
+<li><a href="../generalapply.html">Apply Online</a></li>
+</ul>
+</div>
+
+<div class="menu-popup" id="btn7-popup" style="margin-left:383px !important;">
+<ul>
+<li><a href="../contactus.html">Office Addresses</a></li>
+<!--<li><a href="/contactus-query.asp?links=co2">Query</a></li>-->
+<li><a href="../contactus-suggestions.html">Suggestions</a></li>
+<li><a href="../contactus-land.html">Want to Sell or Develop your Land</a></li>
+</ul>
+</div>
+
+      	<ul>
+      	  <li><a href="#" id="btn1">About Us</a></li>
+          <li><a href="#" id="btn2">Projects</a></li>
+          <li><a href="#" id="btn2e">Plots</a></li>
+          <li><a href="#" id="btn3">Media</a></li>
+          <li><a href="#" id="btn4">NRI</a></li>
+          <li><a href="#" id="btn5">Support</a></li>
+          <li><a href="#" id="btn6">Careers</a></li>
+          <li><a href="#" id="btn7" style="margin-right:22px;">Contact Us</a></li>
+        </ul>
+        
+        <div class="clear"></div>
+      
+		<div class="prop-search">
+        <div class="searchdiv psearch">
+        <div style="padding:15px;">
+        <style>
+.valfrm {font-weight: 400; font-size: 10px; color: #ffffff; font-family: arial; text-decoration: none; text-align:left;}
+</style>
+<script src="../js/property.js"></script>
+<script language="JavaScript">
+<!--
+	function validateproperty()
+	{
+		if(document.frmSearch.category.value=="")
+		{
+			//document.getElementById("alertMsgcategory").innerHTML="Please Select the Property Type.";
+			//document.getElementById("alertMsgcategory").style.visibility="visible";
+			alert("Please Select the Property Type.");
+			document.frmSearch.category.focus();
+			return false;
+		}		
+	return true;		
+	}
+//-->
+</script>
+
+<div id="propdiv">
+
+<form name="frmSearch" method="post" action="http://www.rudrarealestate.com/searchresult.asp" onSubmit="return validateproperty();">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><select name="category" id="category" style="margin-bottom:4px; width:183px;" onChange="getProperty(this.value)">
+      <option value="">Property Type</option>
+      <option value="Residential">Residential</option>
+      <!--<option value="Commercial">Commercial</option>
+      <option value="Retail">Retail</option>
+      <option value="Hospitality">Hospitality</option>-->
+    </select><div id="alertMsgcategory" class="valfrm" style='line-height:15px;'></div></td>
+  </tr>
+  <tr><td><select name="location" style="margin-bottom:4px; width:183px;">
+    <option>Location</option>
+  </select></td>
+  </tr>
+  <tr>
+    <td><select name="units" style="margin-bottom:4px; width:183px;">
+      <option>Unit Type</option>
+    </select></td>
+  </tr>
+  <!--<tr>
+    <td><select name="pricerange" style="margin:4px 0 10px 0; width:183px;">
+      <option>Price Range</option>
+    </select></td>
+  </tr>-->
+  <tr>
+    <td style="padding:0 0 10px 0;"><input name="submit" type="submit" value="Search" class="button" /></td>
+  </tr>  
+</table>
+</form>
+</div>        
+            </div>
+            
+        </div>
+        
+        <span id="searchicon"><img src="../images/prop-button.png" alt="property search" border="0" /></span></div>      
+       </div>
+      <div class="clear"></div>
+    </div>
+
+   <div class="clear"></div>
+   <!----Header End Here----->
+   
+   <!----Content area Start Here----->
+   	<div id="content-area">
+    	
+          <p style="margin:-15px 10px 0 0px"><a href="javascript:;" id="closeicon"><img src="../images/close-btn.png" alt="close button" border="0" align="right" class="butclose" /></a></p>
+          
+      
+          
+        <div class="content">
+          
+          
+          <div class="right-content width665">
+          	
+            <div id="error">
+				<div class="title">Page not found, sorry !!</div>
+                  <p style="text-align:center; font-size:16px;">The page you are looking for doesn't seem to exist.  <br />If you wish to go to Homepage, Please click the button below.</p>
+                    
+                 <a href="../index.html" style="text-decoration:none;"><div class="but1">Back to Home Page</div></a>                
+                  
+				             
+			</div>
+            
+          </div>
+          <div class="clear"></div>
+        </div>
+    
+    </div>
+   <div class="clear"></div>
+   <!----Content area End Here----->
+   
+  <!----Footer Start Here----->
+        <div class="footer">
+   	<div class="left-footer">
+   	 <div class="news-updates"><h3><span>News</span> Updates</h3></div>
+     <div class="clear"></div>
+	
+    <div class="newsUpdates-txt">
+      <ul id="mycarousel" class="jcarousel-skin-tango">
+      
+	  <li><a href="javascript:;">For Allahabad dial Toll Free No - 1800 3000 5353</a></li>
+	  <li><a href="javascript:;">For queries in Varanasi dial Toll Free No - 1800 102 4151</a></li>
+	  <li><a href="javascript:;">Rudra Group is an ISO 9001:2008 certified company</a></li>
+	  <li><a href="javascript:;">Rudra Group is a registered member of CREDAI & IGBC</a></li>
+	 
+	  <!--<li><a href="javascript:;">Rudra Group to Launch Residential Plots in Varanasi & Mirzapur soon</a></li>
+	  <li><a href="javascript:;">Mega Launch of a new project Rudra Awadh Residency in Varanasi on 1st February 2015</a></li> 
+	  <li><a href="javascript:;">Rudra Sangam successfully launched in Allahabad on 14th & 15th February</a></li>	  
+		<li><a href="javascript:;">Possession of Rudra Greens 1st Phase given.</a></li>      
+		<li><a href="javascript:;">Key handed over to Rudra Greens 1st Phase flat owners.</a></li>
+		<li><a href="javascript:;">New projects launched in Varanasi.</a></li>
+		<li><a href="javascript:;">Mega Launching of "Rudra Ganges" on 12<sup>th</sup> October in Parao, Varanasi.</a></li>      
+		<li><a href="javascript:;">Rudra Greens, Kanpur is ready for possession.</a></li>      
+		<li><a href="javascript:;">For any queries in Varanasi dial Toll Free No - 1800 102 4151.</a></li>      
+		<li><a href="javascript:;">Rudra Group is an ISO 9001:2008 certified company.</a></li>
+		<li><a href="javascript:;">Rudra Group is  a registered member of CREDAI & IGBC.</a></li>
+		<li><a href="javascript:;">Phase II (Tower 3) launched in Rudra Sangam & Enclave in Allahabad.</a></li>
+		<li><a href="javascript:;">Rudra Towers, Varanasi is ready for possession. </a></li>
+		<li><a href="javascript:;">Upcoming projects in Delhi-NCR, Gujarat & Gorakhpur.</a></li>
+		<li><a href="javascript:;">sms RUDRA to 56161 for your queries and we will get back to you.</a></li>
+		<li><a href="javascript:;">Welcome to the new web portal of Rudra Group.</a></li>
+		<li><a href="javascript:;">Upcoming projects in Delhi-NCR, Gujarat &amp; Gorakhpur.</a></li>
+		<li><a href="javascript:;">Rudra Banke Bihari launched in grand way on 1<sup>st</sup> December.</a></li>   --> 	
+      </ul>
+    </div>
+    </div>
+     
+   	 <div class="right-footer">
+     	<div class="callbtn"><!--SMS <strong style="font-size:24px;">RUDRA</strong> <span>to <strong style="font-size:24px;">56161</strong></span>--><img src="../images/sms.png" alt="sms" border="0" align="absmiddle" style="float:left; margin:-10px 6px 0 0 !important;" /><!--<a href="http://www.justdial.com/varanasi/Rudra-RealTech-Pvt-Ltd-%3Cnear%3E-Maldahiya/0542PX522-X522-111128175950-R1L1_BZDET" target="_blank"><img src="/images/icon-just.png" alt="" border="0" align="absmiddle" /></a>--><a href="https://www.youtube.com/user/Rudrarealestate" rel="nofollow" target="_blank"><img src="../images/icon-youtube.png" alt="youtube" border="0" align="absmiddle" /></a><a href="http://www.linkedin.com/profile/view?id=300850885&amp;trk=nav_responsive_tab_profile_pic" rel="nofollow" target="_blank"><img src="../images/icon-linkedin.png" alt="linkedin" border="0" align="absmiddle" /></a><a href="https://twitter.com/RUDRAREAL" rel="nofollow" target="_blank"><img src="../images/icon-twitter.png" alt="twitter" border="0" align="absmiddle" /></a><a href="https://www.facebook.com/rudrarealestate" rel="nofollow" target="_blank"><img src="../images/icon-facebook.png" alt="facebook" border="0" align="absmiddle" /></a>
+     	<div class="clear"></div>
+     	</div>
+     	<div class="copyright">&copy; Copyright 2013, all rights reserved with <span>Rudra Real Estate</span>
+			<!--<<br/>a href="/privacy-policy.asp">Privacy Policy</a>&nbsp;|&nbsp;<a href="/disclaimer.asp">Disclaimer</a>&nbsp;&nbsp;|&nbsp;&nbsp;Site by: <a target="_blank" href="http://www.csipl.net">Cross Section</a>--></div>
+     </div>
+   </div>
+
+  <!----Footer End Here----->
+   
+
+</div>
+</body>
+
+<!-- Mirrored from www.rudrarealestate.com/Minefield/favicon.ico by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 May 2016 17:36:32 GMT -->
+</html>

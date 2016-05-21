@@ -1,0 +1,27 @@
+
+
+#shop-side{position:absolute;top:0px;height:100%;width:256px;left:-256px;background:#f4f4f4;-webkit-transition:all 0.3s ease;z-index:500000;overflow:scroll}
+#shop-side ul{margin:0;padding:0}
+#shop-side li{color:#444}
+#shop-side li span,#shop-side li>a{display:block;padding:10px;border-bottom:#f4f4f4 1px solid}
+#shop-side li span:active,#shop-side li>a:active{background:#444;color:#f4f4f4}
+#shop-side li.sale-nav{color:#bc2129}
+#shop-side-closer{display:none}
+.show-shop #shop-side-closer{display:block;position:fixed;left:256px;right:0;top:0;bottom:0;z-index:3}
+
+.main{-webkit-transition:margin 0.3s ease}
+
+.show-shop .main{margin-left:256px;margin-right:-256px}
+.show-shop #shop-side{left:0}
+.show-shop .header-bar{left:256px}
+
+.collapsing-list{overflow:hidden;background:#e6e6e6}
+.collapsing-list li{list-style:none;display:block;-webkit-transition:max-height 0.35s ease-out;max-height:0;overflow:hidden}
+.collapsing-list li>span,.collapsing-list li a{background:#fff; font-size:14px;}
+.collapsing-list a{text-decoration:none;display:block; color:#000;}
+.collapsing-list .top{max-height:56px}
+.collapsing-list .current,.collapsing-list .above-current{max-height:5000px}
+.collapsing-list .above-current>span{background:#a6a6a6;}
+.collapsing-list .current>span{background:#ccc; font-size:14px; font-weight:700;}
+.collapsing-list .below-current{max-height:56px;opacity:1}
+.collapsing-list .hidden{max-height:0}
